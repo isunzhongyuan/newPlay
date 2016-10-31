@@ -1,0 +1,75 @@
+<html>
+<head lang="zh">
+	<meta charset="utf-8">
+	<title>判断底部位置</title>
+	<meta name="Keywords" content="关键词">
+	<meta name="Description" content="我是网页的描述sss">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="background-color:#f2f2f2;">
+<div class="loginTop" style="height: 600px;background-color: #EA3E3E;">
+	<div class="d1" style="background-color: #333333; height: auto;color: #FFFFFF;float: left;width: 500px;">
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+	</div>
+	<div class="d2" style="background-color: #FD6801; height: auto;color: #FFFFFF;float: right;width: 500px;">
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+		1111111111<br />
+	</div>
+</div>
+<div class="loginFooter">
+	<a href="#" title="商城首页" target="_blank">商城首页</a>|
+	<a href="#" title="合作招商" target="_blank">合作招商</a>|
+	<a href="#" title="关于我们" target="_blank">关于我们</a>|
+	<a href="#" title="联系我们" target="_blank">联系我们</a>|
+	<a href="#" title="联系我们" target="_blank">联系我们</a>|
+	<a href="#" title="人才招聘" target="_blank">人才招聘</a><br>
+	Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2015&nbsp;&nbsp;河南省跨境电子商务有限公司 版权所有&nbsp;&nbsp;|&nbsp;&nbsp;豫B2-20140075-21号
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	//判断底部位置
+	$(function(){
+		var docHeight=$(document.body).height();
+		var winHeight=$(window).height();
+		if(docHeight < winHeight){
+			$('.loginFooter').css({"position":"absolute","bottom":"0px"})
+		}
+	})
+	//获取右侧高度 并让左侧高度和右侧保持一致
+		$(function(){
+			var scrH=$(".d2").height();
+			$(".d1").css("height",scrH + "px")
+		})
+		//高度随浏览器窗口一致
+//		$(function(){
+//			var windowHeight = ($(window).height());//顶部有高度要减去如：-88+"px"
+//			$(".d1").height(windowHeight);
+//		})
+})
+</script>
+</body>
+</html>

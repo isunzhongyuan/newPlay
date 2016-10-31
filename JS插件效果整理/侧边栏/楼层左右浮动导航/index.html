@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+<meta charset="utf-8">
+<title>左右浮动导航</title>
+<meta name="Keywords" content="关键词"/>
+<meta name="renderer" content="webkit">
+<meta name="Description" content="网页描述"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<link rel="stylesheet" href="common.css" type="text/css"/>
+<link rel="stylesheet" href="index.css" type="text/css" />
+<script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jquery.nav.js" type="text/javascript"></script>
+</head>
+<body style="background-color: #f5f5f5;">
+  <!-- 左侧浮动导航 -->
+<ul id="floatnav">
+  <li><a class="f1 current" href="#F1">软管总成</a></li>
+  <li><a class="f2" href="#F2">油品</a></li>
+  <li><a class="f3" href="#F3">破碎锤</a></li>
+  <li><a class="f4" href="#F4">电池</a></li>
+  <li><a class="f5" href="#F5">制冷剂</a></li>
+  <li><a class="f6" href="#F6">滤芯</a></li>
+  <li><a class="f7" href="#F7">密封</a></li>
+  <li><a class="f8" href="#F8">其他</a></li>
+  <li><a class="f13" href="#top">返回顶部</a></li>
+</ul>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	//	左侧浮动导航
+	$('#floatnav').onePageNav({
+		scrollThreshold: 0.1,
+		filter: ':not(.dowebok)'
+	});
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 500){
+			$('#floatnav').fadeIn();
+		} else {
+			$('#floatnav').fadeOut();
+		}
+	});
+</script>
+</body>
+</html>

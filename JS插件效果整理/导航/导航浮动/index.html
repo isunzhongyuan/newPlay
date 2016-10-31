@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>导航浮动</title>
+	<meta name="Keywords" content="关键词"/>
+	<meta name="renderer" content="webkit">
+	<meta name="Description" content="网页描述"/>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<link type="text/css" rel="stylesheet" href="style.css" />
+<!--	<link type="text/css" rel="stylesheet" href="common.css" />-->
+	<script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+	<style>
+		*{ margin: 0; padding: 0;}
+		li,ul{list-style-type:none}
+	</style>
+</head>
+<body style="background-color: antiquewhite; height: 1500px;">
+<div style="height: 150px;background-color: #333333;"></div>
+<div class="top-nav-fixed">
+    <ul class="top-nav-wrap">
+        <li><a class="top-nav-item" href="#" target="_blank" title="首页">首页</a></li>
+        <li><a class="tn-link" href="#" target="_blank" title="首页">试卷资源</a></li>
+        <li><a class="tn-link" href="#" target="_blank" title="首页">认识未来脑</a></li>
+        <li><a class="tn-link" href="#" target="_blank" title="首页">平台动态</a></li>
+        <li><a class="top-nav-item" href="#" target="_blank" title="首页">数据分析</a></li>
+        <li><a class="top-nav-item" href="#" target="_blank" title="首页">合作院校</a></li>
+    </ul>
+</div>
+<script type="text/javascript">       
+//导航自动固定到顶部
+$(window).scroll(function () {
+    var topH = $(".top-nav-fixed").offset().top + 50,
+        scrolltop = $(window).scrollTop();
+    if (scrolltop >= topH) {
+        $(".top-nav-wrap").addClass("top-nav-wrap-fixed");
+        $(".top-nav-wrap").stop().animate({"top": "0"}, 400);
+    }
+    else {
+        $(".top-nav-wrap").removeClass("top-nav-wrap-fixed");
+        $(".top-nav-wrap").css({"top":""})
+    }
+});
+
+</script>
+</body>
+</html>

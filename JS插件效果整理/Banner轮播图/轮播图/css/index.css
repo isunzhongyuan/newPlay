@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*--- 商城首页样式 裴富成  2015年9月23日 ---*/
+a:hover{text-decoration:none}
+/* banner 轮播大图 */
+.banner{width:1200px;margin:15px auto 0 auto;height:auto;overflow:hidden;position:relative}
+.slideBox{width:1200px;height:440px;overflow:hidden;position:relative;border:1px solid #ddd}
+.slideBox .hd{height:14px;overflow:hidden;position:absolute;right:500px;bottom:40px;z-index:1}
+.slideBox .hd ul{overflow:hidden;zoom:1;float:left}
+.slideBox .hd ul li{float:left;margin-right:5px;width:14px;height:14px;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;line-height:13px;text-align:center;background:#fff;cursor:pointer}
+.slideBox .hd ul li.on{background:#f4825b;color:#fff}
+.slideBox .bd{position:relative;height:100%;z-index:0}
+.slideBox .bd li{zoom:1;vertical-align:middle}
+.slideBox .bd img{width:1200px;height:440px;display:block}
+.slideBox .next,.slideBox .prev{position:absolute;left:0;top:50%;margin-top:-25px;display:block;width:32px;height:40px;background:url(../images/slider-arrow.png) -110px 5px no-repeat;filter:alpha(opacity=50);opacity:.5}
+.slideBox .next{left:auto;right:0;background-position:8px 5px}
+.slideBox .next:hover,.slideBox .prev:hover{filter:alpha(opacity=100);opacity:1}
+.slideBox .prevStop{display:none}
+.slideBox .nextStop{display:none}
+.txt-bg { position: absolute; bottom: 0; z-index: 1; height: 36px; width:100%;  background: #333; filter: alpha(opacity=40); opacity: 0.4; overflow: hidden; }
+.txt { position: absolute; bottom: 0; z-index: 2; height: 36px; width:100%; overflow: hidden; }
+.txt ul{ height: 36px;line-height: 36px; overflow: hidden;}
+.txt ul li{ height:36px; line-height:36px; position:absolute; bottom:-36px;width: 100%;}
+.txt li a{ display: block; color: white;font: bold 12px/36px "\5FAE\8F6F\96C5\9ED1"; text-decoration: none;text-align: center;width: 100%; height: 36px; }

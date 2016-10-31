@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8" />
+	<title>网页的标题</title>
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="我是网页的描述sss"/>
+	<link rel="stylesheet" href="css/common.css" type="text/css" />
+	<link rel="stylesheet" href="css/iconfont/iconfont.css" type="text/css" />
+	<link rel="stylesheet" href="css/admin.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body style="background-color:#e8eef2;padding:164px 20px 20px 265px">
+<!---- 网站管理后台左侧导航 ---->
+<div class="adminNav">
+	<ul>
+		<li class="cur">
+			<h3><i class="iconfont">&#xe605;</i>订单管理</h3>
+			<a class="hover" href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+		<li>
+			<h3><i class="iconfont">&#xe60a;</i>洗车工管理</h3>
+			<a href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+		<li>
+			<h3><i class="iconfont">&#xe60b;</i>会员管理</h3>
+			<a href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+		<li>
+			<h3><i class="iconfont">&#xe606;</i>服务管理</h3>
+			<a href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+		<li>
+			<h3><i class="iconfont">&#xe601;</i>统计管理</h3>
+			<a href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+		<li>
+			<h3><i class="iconfont">&#xe602;</i>消息管理</h3>
+			<a href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+		<li>
+			<h3><i class="iconfont">&#xe600;</i>权限管理</h3>
+			<a href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+		<li>
+			<h3><i class="iconfont">&#xe603;</i>分销中心</h3>
+			<a href="#" title="管理后台" target="_self">001</a>
+			<a href="#" title="管理后台" target="_self">002</a>
+		</li>
+	</ul >
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	//左侧点击展开
+	$(".adminNav ul li h3").hover(function(){
+		$(this).toggleClass("on")
+	})
+	//左侧点击展开
+	$(".adminNav ul li h3").click(function(){
+		$(this).parent().toggleClass("cur")
+		$(this).parent().siblings().removeClass("cur")
+	})
+})
+</script>
+</body>
+</html>

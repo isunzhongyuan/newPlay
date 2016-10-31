@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+<meta charset="utf-8">
+<title>产品详情</title>
+<meta name="Keywords" content="关键词"/>
+<meta name="Description" content="网页的描述"/>
+<link rel="stylesheet" href="common.css" type="text/css"/>
+<link rel="stylesheet" href="product.css" type="text/css" />
+<script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body style="background-color: #f5f5f5;">
+<!--- 产品详情 --->
+<div class="productInfos">
+	<dl class="proDets">
+		<!--- 购买数量 --->
+		<dd class="buyCounts">
+			<b>数量：</b>
+			<input class="minusBtn" type="button" value="-" />
+			<input class="countInput" type="text" value="1" />
+			<input class="addBtn" type="button" value="+" />
+		</dd>
+	</dl>
+</div>
+</body>
+<script type="text/javascript">  
+$(document).ready(function(){  
+      $(".addBtn").click(function(){  
+      var oldValue=parseInt($(".countInput").val()); //取出现在的值，并使用parseInt转为int类型数据  
+      oldValue++   //自加1  
+      $(".countInput").val(oldValue)  //将增加后的值付给控件  
+});
+$(".minusBtn").click(function(){  
+      var oldValue=parseInt($(".countInput").val()); //取出现在的值，并使用parseInt转为int类型数据  
+      oldValue--   //自减1  
+     $(".countInput").val(oldValue)  //将增加后的值付给控件  
+});    
+});    
+</script>  
+</html>

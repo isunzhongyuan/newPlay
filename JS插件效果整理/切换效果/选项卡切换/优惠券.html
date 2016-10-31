@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+	<meta charset="utf-8" />
+	<title>选项卡切换</title>
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="我是网页的描述sss"/>
+	<link rel="stylesheet" href="css/common.css" type="text/css" />	
+	<link rel="stylesheet" href="http://testui.yangdou.com/project/userCenter/css/common.css" type="text/css" />	
+	<link rel="stylesheet" href="css/iconfont/iconfont.css" type="text/css" />	
+	<link rel="stylesheet" href="http://testui.yangdou.com/project/userCenter/css/myTicekets.css" type="text/css" />	
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="background-color:#f2f2f2;">
+
+	<!--- 右侧 --->
+	<div class="rightSide">
+		<!--- 我的优惠券 --->
+		<div class="myTicketTit">
+			<span class="firstTit on">未使用</span>
+			<span>已使用</span>
+			<span>已过期</span>
+		</div>
+		<!--- 我的优惠券 --->
+		<div class="myTicket">
+			<!---- 已经使用优惠券 ---->
+			<div class="ticeketDets on">
+				<!---- 已经使用优惠券 ---->
+				<table class="ticketTable" border="0" cellpadding="0" cellspacing="0">
+					<tr class="tit">
+						<td>优惠券代码</td>
+						<td>类型</td>
+						<td>面值</td>
+						<td>有效时间</td>
+						<td>使用说明</td>
+					</tr>
+					<tr class="txt">
+						<td>123456789123456789</td>	
+						<td>我是优惠券的类型 类型</td>
+						<td>75</td>
+						<td>2015-09-15</td>
+						<td>满100减80</td>
+					</tr>
+					<tr class="txt">
+						<td>123456789123456789</td>	
+						<td>我是优惠券的类型 类型</td>
+						<td>75</td>
+						<td>2015-09-15</td>
+						<td>满100减80</td>
+					</tr>
+					<tr class="txt">
+						<td>123456789123456789</td>	
+						<td>我是优惠券的类型 类型</td>
+						<td>75</td>
+						<td>2015-09-15</td>
+						<td>满100减80</td>
+					</tr>
+					
+				</table>
+			</div>
+			<div class="ticeketDets">
+				<!---- 已经使用优惠券 ---->
+				<table class="ticketTable" border="0" cellpadding="0" cellspacing="0">
+					<tr class="tit">
+						<td>优惠券代码</td>	
+						<td>类型</td>
+						<td>面值</td>
+						<td>有效时间</td>
+						<td>使用说明</td>
+					</tr>
+					<tr class="txt">
+						<td>123456789123456789</td>	
+						<td>我是优惠券的类型 类型</td>
+						<td>75</td>
+						<td>2015-09-15</td>
+						<td>满100减80</td>
+					</tr>					
+				</table>
+			</div>
+			<div class="ticeketDets">
+				<!---- 已经使用优惠券 ---->
+				<table class="ticketTable" border="0" cellpadding="0" cellspacing="0">
+					<tr class="tit">
+						<td>优惠券代码</td>	
+						<td>类型</td>
+						<td>面值</td>
+						<td>有效时间</td>
+						<td>使用说明</td>
+					</tr>
+					<tr class="txt">
+						<td>123456789123456789</td>
+						<td>我是优惠券的类型 类型</td>
+						<td>75</td>
+						<td>2015-09-15</td>
+						<td>满100减80</td>
+					</tr>
+					<tr class="txt">
+						<td>123456789123456789</td>	
+						<td>我是优惠券的类型 类型</td>
+						<td>75</td>
+						<td>2015-09-15</td>
+						<td>满100减80</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	//我的优惠券选项卡
+	$(function(){
+		$(".myTicketTit span").each(function(index){
+			$(this).click(function(){
+				$(".myTicketTit span.on").removeClass("on");
+				$(this).addClass("on");
+				$(".myTicket div:eq("+index+")").show()
+				.siblings().hide()
+			})
+		})
+	})
+})
+</script>
+</body>
+</html>

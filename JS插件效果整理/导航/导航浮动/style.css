@@ -1,0 +1,30 @@
+@charset "utf-8";
+.top-nav-wrap {
+    background-color: #4b88e6;
+    height: 50px;
+    position: relative;
+    width: 100%;
+    z-index: 110;
+}
+.top-nav-fixed {
+    height: 50px;
+    width: 100%;
+}
+.top-nav-wrap-fixed {
+    box-shadow: 1px 3px 6px rgba(3, 26, 62, 0.18);
+    left: 0;
+    position: fixed;
+    top: -50px;
+}
+.top-nav-wrap li{ float: left;}
+.top-nav-wrap li a {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 22px;
+    position: relative;
+    text-shadow: 0 4px 2px #3e82ea;
+    z-index: 110;
+}

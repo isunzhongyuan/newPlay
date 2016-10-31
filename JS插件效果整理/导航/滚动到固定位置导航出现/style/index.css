@@ -1,0 +1,50 @@
+/* CSS Document */
+/*@author lingydan @date 2015-04-07 */
+*html{ background-image:url(about:blank);    background-attachment:fixed;	}
+.try_float_bg {  background: none repeat scroll 0 0 #000;  height: 2000px; left: 0; opacity: 0.5; position:fixed; top: 0;width: 100%;z-index: 9998;}
+.try_float{  position:fixed; z-index:9999; top:50%; left:50%; margin:-250px 0 0 -430px; width:860px; height500px;}
+.try_float .del_float{ position:absolute; right:40px; top:30px; cursor:pointer;}
+.ie6{ _position:absolute; _margin-top: 0; _top:expression(documentElement.scrollTop+(documentElement.clientHeight-this.offsetHeight)/2)}
+
+
+
+a:hover{color:#2aa5d2;text-decoration: none} 
+.nav .subnav .box{position:absolute; z-index:9999;width:190px; background:#33aee7; }
+/*顶部浮动导航*/
+.floattopnav{ display:none;position: fixed;left: 0;top: 0; z-index:99;width: 100%;height:36px; padding:7px 0;opacity: 0.95;background: #fff;box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);}
+.floattopnav .subnav{ position:relative; z-index:999; width:190px; float:left; margin-right:190px;font-family:"微软雅黑";}
+.floattopnav .subnav h2{width:170px; height:36px; padding-left: 20px; line-height:36px; background:#2a9af0; color:#fff; cursor:pointer;}
+.floattopnav .subnav h2 a{ color:#fff; font-size: 14px; font-weight: normal;}
+.floattopnav .subnav h2 a i{ vertical-align: middle; display: inline-block; margin-right: 10px; width: 17px; height: 17px; background:url(../image/common/icon_index.png) no-repeat -120px 0;}
+.floattopnav .subnav .box{ display:none;position:absolute; z-index:9999; top:36px; left:0;width:190px;background:#33aee7;}
+.floattopnav .subnav .box ul{width:190px; position:relative; display:block; z-index:9999}
+.floattopnav .subnav .box li{width:188px; padding-left:2px; line-height:34px; font-size:12px; border-bottom: 1px solid #4fb5e4; vertical-align:middle;}
+.floattopnav .subnav .box li span{ display:block;padding-left:15px; height:175px;height:34px;color:#fff;cursor:pointer; background: url(../image/common/subnav_li_span_bg.png) no-repeat 175px 15px;}
+.floattopnav .subnav .box li.hover span{background:#fff url(../image/common/subnav_hover_bg.png) no-repeat right top; color:#33aee7; cursor:pointer;}
+.floattopnav .subnav .box li span a{color:#fff; font-size: 14px; }
+.floattopnav .subnav .box li.hover span a{color:#33aee7;}
+.floattopnav .subnav .box li span a:hover{ color:#33aee7; text-decoration:underline;}
+.floattopnav .subnav .box li .subbox{ display:none; position:absolute; left:190px; top:0px; width:337px; height:374px;padding:25px 15px 20px 5px; border-bottom:1px solid #d6d6d6;border-right:1px solid #d6d6d6; background:#fff;}
+.floattopnav .subnav .box li .subbox .title{ margin-bottom: 10px; }
+.floattopnav .subnav .box li .subbox .title a{ margin-right: 10px; padding: 3px 10px; background:#ff8a2b; color: #fff;}
+.floattopnav .subnav .box li .subbox h3{ height:40px; line-height:40px; margin-bottom:0px;border-top: 1px solid #e6e6e6;}
+.floattopnav .subnav .box li .subbox h3 a{ padding-right: 15px; color:#383838; font-size:14px; font-weight:normal;font-family:"微软雅黑"; background: url(../image/common/subbox_h3_bg.png) no-repeat right 7px;}
+.floattopnav .subnav .box li .subbox .text{margin-bottom:10px;line-height:24px;color:#666;}
+.floattopnav .subnav .box li .subbox .text a{ display: inline-block; width:75px; text-align: center; color:#727272;}
+.floattopnav .subnav .box li .subbox .text a:hover{ color:#ff8a2b;}
+.floattopnav .subnav .box li .subbox .pic{ height:215px; text-align:center;}
+.floattopnav .subnav .box li .subbox .pic img{width:312px;height:215px;}
+.floattopnav .subnav .box li.on span a{background:#1a9fc0 url(../image/common/subnav_hover_bg.png) no-repeat right top; color:#fff;}
+.floattopnav .subnav .box li.on .subbox{ display:block;}
+
+.floattopnav .search_input{ float:left;  width:492px; height:32px; background:#00aee8; border:2px solid #00aee8; }
+.floattopnav .search_input .txt{float:left; width:400px;height:32px; line-height:32px; padding:0 20px 0 10px;border:0; vertical-align:top;background:#fff;  color:#999; font-size:12px;}
+.floattopnav .search_input .btn{float:left; width:60px;height:32px; border:1px solid #00aee8;background:#00aee8; color:#fff; font-size:16px;font-family:"微软雅黑"; cursor:pointer;vertical-align:top;}
+
+.ftnav_shop{}
+.floattopnav .ftnav_right{ float:right; line-height:36px;}
+.floattopnav .ftnav_right a{ margin:0 5px; color:#666;}
+.floattopnav .ftnav_right .ftnav_shop{ position:relative;display: inline-block;}
+.floattopnav .ftnav_right .ftnav_shop i{ display: inline-block; width: 20px; height: 20px; vertical-align: middle; margin-right: 5px; background: url(../image/common/icon_index.png) no-repeat -50px 0;}
+.floattopnav .ftnav_right .ftnav_shop span{position: absolute; left: 65px; top: 3px; border-radius: 8px; display: block; width: 15px; height: 15px; line-height: 15px; text-align: center; background:#e92351; color: #fff; font-style: normal; font-size: 10px}
+

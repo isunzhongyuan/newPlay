@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*--- 购物车样式 刘朋玉 2015年9月11日 ---*/
+.cartTop{width:1200px;height:95px;margin:0px auto 0px auto;position:relative;}
+.cartTop h2{font:24px/95px "\5FAE\8F6F\96C5\9ED1";color:#666;padding-left:15px}
+.cartSteps{width:430px;position:absolute;right:0px;top:25px;}
+.cartSteps p{width:373px;height:16px;background:url("../images/account.png") no-repeat 0px -319px scroll;margin-left:23px;position:relative;}
+.cartSteps p i{max-width:373px;height:16px;position:absolute;top:0px;left:0px;background:url("../images/account.png") no-repeat 0px -351px scroll;}
+.cartSteps ul{padding:5px 0px 0px 0px;}
+.cartSteps ul li{float:left;}
+.cartSteps ul li.on{color:#f90}
+.cartSteps ul li.step01{padding-right:106px;}
+.cartSteps ul li.step02{padding-right:116px;}
+.cartMain{width:1200px;height:auto;overflow:hidden;margin:0px auto 0px auto;background-color:#fff;}
+.discountInfo{font:14px/50px "\5FAE\8F6F\96C5\9ED1";height:50px;background-color:#fff9ef;padding:0px 0px 0px 30px;color:#f90}
+.discountInfo i{color:#999;}
+.cartList{height:auto;overflow:hidden;}
+.cartList li{height:auto;overflow:hidden;}
+.cartList li.tit{height:49px;border-bottom:#f2f2f2 solid 1px;font:14px/50px "\5FAE\8F6F\96C5\9ED1";color:#666;}
+.cartList li span{height:auto;overflow:hidden;float:left;display:block;}
+.cartCheck{width:65px;padding-left:25px;}
+.cartCheck input{margin-right:10px;width:16px;height:16px;}
+.cartPro{width:410px;position:relative;}
+.proName,.proNum{width:320px;font:14px/20px "\5FAE\8F6F\96C5\9ED1";position:absolute;left:90px;overflow:hidden;}
+.proName{max-height:40px;top:0px;color:#333;}
+.proName:hover{color:#f90;}
+.proNum{color:#999;height:20px;top:60px}
+.specPro{width:140px;text-align:center;}
+.proPrice{width:140px;text-align:center;}
+.proCount{width:140px;text-align:center;}
+.subtotal{width:140px;text-align:center;}
+.cartHandle{width:140px;text-align:center;}
+.cartList li.txt{padding:25px 0px;border-bottom:#dcdcdc dashed 1px;}
+.cartList li.txt span{height:80px;font:14px/24px "\5FAE\8F6F\96C5\9ED1";color:#333;overflow:hidden;}
+.cartList li.txt span.cartCheck input{margin:32px 0px 0px 20px;}
+.cartList li.txt span.subtotal{color:#f90;}
+.cartList li.txt span.proCount{width:100px;padding:0px 20px;}
+.proCount a{width:23px;height:22px;border:#e2e2e2 solid 1px;display:inline-block;float:left;font:bold 10px/22px "\5FAE\8F6F\96C5\9ED1";color:#666}
+.proCount a:hover{color:#f90;text-decoration:none;}
+.proCount input{width:50px;height:22px;text-align:center;border-top:#e2e2e2 solid 1px;border-bottom:#e2e2e2 solid 1px;border-left:none;border-right:none;float:left;box-sizing:content-box;}
+.cartHandle a{color:#333;}
+.cartHandle a:hover{color:#f90;}
+.giftPro{padding:12px 0px 0px 90px;clear:both;color:#999;}
+.cartOp{border-top:#f2f2f2 solid 1px;padding:20px 0px 100px 25px;color:#666;*text-align:right;height:48px;overflow:hidden;font:14px/48px "\5FAE\8F6F\96C5\9ED1";}
+.cartOp em{float:left;}
+.cartOp input[type="checkbox"]{width:16px;height:16px;float:left;margin:16px 10px 0px 0px;}
+.cartOp a{margin:0px 0px 0px 25px;color:#666;*float:left;}
+.cartOp a:hover{color:#f90;text-decoration:none;}
+.cartOp span{width:720px;float:right;*float:none;*display:inline-block;padding-right:30px;font:14px/25px "\5FAE\8F6F\96C5\9ED1";text-align:right;}
+.cartOp span font{font:30px/48px "\5FAE\8F6F\96C5\9ED1";color:#f90;}
+.cartOp span input[type="button"]{width:150px;height:48px;float:right;*float:none;color:#fff;border:none;background-color:#f90;cursor:pointer;margin-left:40px;*margin-left:20px;border-radius:5px;font-size:20px}
+/*---- 安装和配送 ----*/
+.install{width:1200px;height:auto;overflow:hidden;margin:0px auto;background-color:#fff;padding-bottom:13px;border-bottom:#f0f0f0 solid 1px;}
+.install h3{font:16px/16px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:30px 0px 18px 25px;}
+.installWay{padding:0px 0px 17px 25px;height:36px;}
+.installWay b{font:14px/36px "\5FAE\8F6F\96C5\9ED1";color:#666;}
+.installWay span{width:140px;height:32px;border:#ebebeb solid 2px;display:inline-block;margin-right:15px;color:#666;text-align:center;font:14px/32px "\5FAE\8F6F\96C5\9ED1";cursor:pointer;}
+.installWay span.selected{border:#e4393c solid 2px;background:url("../images/account.png") no-repeat 128px -227px scroll;}
+/*---- 收货地址列表 ----*/
+.addressList{width:1200px;height:auto;overflow:hidden;margin:0px auto;background-color:#fff;padding-bottom:13px;position:relative;border-bottom:#f0f0f0 solid 1px;}
+.addressList h3{font:16px/16px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:30px 0px 18px 25px;}
+.addAddress{position:absolute;top:31px;right:60px;color:#e4393c;font:14px/14px "\5FAE\8F6F\96C5\9ED1"}
+.addressList ul{height:108px;overflow:hidden;padding:0px 40px 0px 60px;}
+.addressList ul.up{height:auto;}
+.addressList ul li{height:auto;overflow:hidden;margin-bottom:18px;color:#666;}
+.addressList ul li b{width:140px;height:32px;border:#ebebeb solid 2px;display:inline-block;margin-right:20px;float:left;color:#666;text-align:center;font:14px/32px "\5FAE\8F6F\96C5\9ED1";}
+.addressList ul li.selected  b{border:#e4393c solid 2px;background:url("../images/account.png") no-repeat 128px -227px scroll;}
+.addressList ul li.selected .addOp .setDefault{display:none;}
+.addInfos{width:685px;height:36px;overflow:hidden;font:14px/36px "\5FAE\8F6F\96C5\9ED1";display:inline-block;float:left;padding-left:15px;cursor:pointer;}
+.addOp{width:215px;height:36px;overflow:hidden;font:14px/36px "\5FAE\8F6F\96C5\9ED1";display:inline-block;float:left;text-align:right;padding-right:15px;display:none;}
+.addOp.hover{display:block;} 
+.addOp a{margin-left:15px;color:#666;}
+.addOp a:hover{color:#e4393c;text-decoration:none;}
+.addInfos.hover,.addOp.hover{background-color:#f0f0f0;}
+.showAddList{margin:0px 40px 0px 60px;font:14px/14px "\5FAE\8F6F\96C5\9ED1";background:url("../images/account.png") no-repeat 65px -288px scroll;padding-right:30px;color:#666}
+.showAddList.up{background-position:65px -263px;}
+.showAddList:hover{color:#f60;text-decoration:none;}
+/*---- 支付方式 ----*/
+.payWay{width:1200px;height:auto;overflow:hidden;margin:0px auto;background-color:#fff;padding-bottom:30px;position:relative;border-bottom:#f0f0f0 solid 1px;font:14px/15px "\5FAE\8F6F\96C5\9ED1";color:#666;}
+.payWay h3{font:16px/16px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:30px 0px 30px 25px;}
+.payWay input[type="radio"]{width:15px;height:15px;margin-right:10px;}
+.payWay font{font:12px/15px "\5FAE\8F6F\96C5\9ED1";color:#999;}
+.payWay i{font-size:30px;color:#c90f0b;margin-right:10px;}
+.payWay i.alipay{color:#0599e1}
+/*---- 购物车订单列表 ----*/
+.orderList{width:1200px;height:auto;overflow:hidden;margin:0px auto;background-color:#fff;padding-bottom:13px;position:relative;}
+.backCart{position:absolute;top:31px;right:25px;color:#e4393c;font:14px/14px "\5FAE\8F6F\96C5\9ED1"}
+.orderList h3{font:16px/16px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:30px 0px 18px 25px;}
+.orderList ul{padding:0px 25px;height:auto;overflow:hidden;}
+.orderList ul li{height:auto;overflow:hidden;}
+.orderList li.tit{height:49px;border-bottom:#f2f2f2 solid 1px;font:14px/50px "\5FAE\8F6F\96C5\9ED1";color:#666;background-color:#f3f3f3;}
+.orderList li span{height:auto;overflow:hidden;float:left;display:block;}
+.orderList li.txt{padding:25px 0px;border-bottom:#f0f0f0 solid 1px;}
+.orderPro{width:410px;position:relative;padding-left:30px;}
+.orderName,.orderNum{width:320px;font:14px/20px "\5FAE\8F6F\96C5\9ED1";position:absolute;left:120px;overflow:hidden;}
+.orderName{max-height:40px;top:0px;color:#333;}
+.orderName:hover{color:#f90;}
+.orderNum{color:#999;height:20px;top:60px}
+.orderGift{padding:12px 0px 0px 120px;clear:both;color:#999;}
+.orderPrice,.orderCount,.orderDis,.orderTotal{width:177px;text-align:center;font-size:14px;}
+.orderList li.txt span.orderTotal{color:#f60;}
+/*---- 安装费用 ----*/
+.installPay{width:1200px;height:auto;overflow:hidden;margin:0px auto;background-color:#fff;padding-bottom:13px;position:relative;}
+.installPay h3{font:16px/16px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:30px 0px 18px 25px;}
+.installPay ul{padding:0px 25px 0px 25px;height:auto;overflow:hidden;}
+.installPay ul li{height:auto;overflow:hidden;}
+.installPay li.tit{height:49px;border-bottom:#f2f2f2 solid 1px;font:14px/50px "\5FAE\8F6F\96C5\9ED1";color:#666;background-color:#f3f3f3;margin-bottom:12px;}
+.installPay ul li span{overflow:hidden;float:left;display:block;}
+.installPay li.txt{height:40px;font:14px/40px "\5FAE\8F6F\96C5\9ED1";color:#666;}
+.installPay li.txt span.serPrice{color:#e4393c}
+.serPro{width:180px;padding-left:35px;padding-right:15px;}
+.serStandard{width:330px;padding-right:15px;}
+.serPrice{width:215px;padding-right:15px;}
+.serRemark{width:330px;padding-right:15px;}
+/*---- 发票信息 ----*/
+.invoiceInfo{width:1200px;height:auto;overflow:hidden;margin:0px auto;background-color:#fff;padding-bottom:13px;position:relative;color:#666;border-bottom:#f0f0f0 solid 1px;}
+.invoiceInfo h3{font:16px/16px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:30px 0px 18px 25px;}
+.invoiceInfo input[type="checkbox"]{width:15px;height:15px;margin:0px 10px 0px 25px;}
+.invoiceInfo input[type="text"]{width:185px;height:18px;border:#f90 solid 1px;margin-left:5px;padding-left:5px}
+.invoiceInfo p{padding:15px 0px 0px 25px;}
+/*---- 购物车订单金额统计 ----*/
+.cartTotal{width:1200px;height:auto;overflow:hidden;margin:0px auto;background-color:#fff;padding:40px 0px 13px 0px;position:relative;color:#666;border-bottom:#f0f0f0 solid 1px;}
+.cartTotal h3{font:16px/16px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:30px 0px 18px 25px;}
+.cartTotal p{text-align:right;padding:0px 50px 40px 25px;font:14px/14px "\5FAE\8F6F\96C5\9ED1";}
+.cartTotal p i{font:12px/14px "\5FAE\8F6F\96C5\9ED1";color:#999;margin-right:50px;}
+.cartTotal p span{display:inline-block;text-align:right;width:130px;color:#f60;}
+.cartTotal p input[type="button"]{width:130px;height:36px;font-size:18px;border:none;border-radius:4px;background-color:#f90;color:#fff;margin-left:50px;cursor:pointer;}
+.cartTotal p input[type="checkbox"]{width:15px;height:15px;margin:0px 5px;}
+.cartTotal p input[type="text"]{width:60px;margin:0px 5px;text-align:center;border:#f90 solid 1px;}
+.cartTotal p font{font:bold 24px/24px "\5FAE\8F6F\96C5\9ED1";color:#f90;}
+/*---- 编辑收获地址弹窗 ----*/
+.editAddress{width:690px;height:550px;background-color:#fff;position:relative;display:none;}
+.editAddress h3{font:14px/40px "\5FAE\8F6F\96C5\9ED1";color:#666;background-color:#f3f3f3;padding-left:20px;}
+.closeBtn{position:absolute;top:7px;right:10px;color:#666;}
+.closeBtn:hover{text-decoration:none;color:#f60}
+.editAddress ul{height:auto;overflow:hidden;padding-top:10px;}
+.editAddress ul li{margin-top:20px;height:auto;overflow:hidden;}
+.editAddress ul li i{width:180px;float:left;text-align:right;font:14px/38px "\5FAE\8F6F\96C5\9ED1";color:#666}
+.editAddress ul li i font{margin-right:4px;color:#f60;}
+.editAddress ul li input[type="text"]{width:240px;height:14px;float:left;font-size:14px;vertical-align:center;font:14px/14px "\5FAE\8F6F\96C5\9ED1 \9";color:#333;border:#dcdcdc solid 1px;padding:11px 0px 11px 10px;border-radius:4px;box-sizing:content-box;}
+.editAddress ul li span{padding-left:15px;color:#ea3e3e;font:14px/38px "\5FAE\8F6F\96C5\9ED1";float:left;}
+.editAddress ul li select{height:36px;float:left;margin-right:15px;border-radius:4px;border:#dcdcdc solid 1px;}
+.editAddress ul li textarea{width:253px;height:50px;border:#dcdcdc solid 1px;border-radius:4px;float:left;padding:3px 0px 0px 5px;}
+.editAddress ul li p{display:block;width:570px;float:left;padding:10px 0px 0px 180px;color:#999}
+.editAddress ul li  input[type="button"]{height:36px;font-size:14px;border:none;border-radius:4px;background-color:#f90;color:#fff;margin:0px 0px 0px 180px;cursor:pointer;padding:0px 15px}
+.editAddress ul li  input[type="button"].cancelBtn{margin:0px 0px 0px 20px;padding:0px 30px;background-color:#999;}
+.editAddress ul li.addressDets i,.editAddress ul li.addressDets span{font:14px/20px "\5FAE\8F6F\96C5\9ED1";}
+/*---- 订单提交成功 ----*/
+.orderFinish{width:1200px;height:auto;overflow:hidden;margin:0px auto 0px auto;background-color:#fff;padding-bottom:90px;}
+.orderFinish p{padding:15px 0px 0px 440px;}
+.orderFinish p.tit{padding-top:95px;font:24px/40px "\5FAE\8F6F\96C5\9ED1";color:#333;padding-left:380px;}
+.orderFinish p i.iconfont{font-size:40px;margin-right:20px;color:#f90}
+.orderFinish p.price{color:#666;}
+.orderFinish p.price font{font:30px/40px "\5FAE\8F6F\96C5\9ED1";color:#f90}
+.orderFinish p font{color:#f90;margin:0px 5px;}
+.orderFinish p a{margin-right:15px;color:#2d8cbc;}
+/*---- 购物车为空 ----*/
+.cartEmpty{width:1200px;height:400px;overflow:hidden;margin:20px auto 0px auto;background-color:#fff;position:relative;}
+.cartEmpty i{font-size:70px;position:absolute;color:#999;top:90px;left:280px;}
+.cartEmpty p{padding:15px 0px 0px 380px;}
+.cartEmpty p.tit{padding-top:100px;font:20px/40px "\5FAE\8F6F\96C5\9ED1";color:#666;}
+.cartEmpty p input[type="button"]{width:80px;height:36px;font-size:16px;border:none;border-radius:4px;background-color:#f90;color:#fff;cursor:pointer;margin-right:30px;}
+.cartEmpty p a{color:#666;text-decoration:underline;}
+.cartEmpty p a:hover{color:#f60;}
+

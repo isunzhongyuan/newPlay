@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*---- 我的优惠券 ----*/
+.ticketWelcom{height:auto;overflow:hidden;}
+.ticketWelcom h1{font:18px/18px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:20px 0px 10px 0px}
+.ticketWelcom p{color:#999;font:12px/14px "\5FAE\8F6F\96C5\9ED1";}
+.ticketWelcom p a{color:#f60;margin:0px 5px;}
+/*---- 我的优惠券 ----*/
+.myTicketTit{height:21px;border-bottom:#e8e8e8 solid 1px;margin-top:10px;padding:15px 0px;}
+.myTicketTit span{width:130px;float:left;padding:0px 0px;font:15px/21px "\5FAE\8F6F\96C5\9ED1";color:#999;text-align:center;cursor:pointer;border-left:#dcdcdc solid 1px;}
+.myTicketTit span.on{color:#f60;}
+.myTicketTit span.firstTit{border-left:none;}
+.myTickte{height:auto;overflow:hidden;}
+.ticeketDets{height:auto;overflow:hidden;display:none;padding-top:15px;}
+.ticeketDets.on{display:block;}
+.ticeketDets p{font:12px/30px "\5FAE\8F6F\96C5\9ED1";color:#f60;}
+.ticeketDets p a{color:#5c9fe5}
+.ticketTable{width:100%;border:#e8e8e8 solid 1px;margin-top:20px;padding-bottom:25px;}
+.ticketTable tr.tit td{height:45px;background-color:#f1f1f1;font:14px/45px "\5FAE\8F6F\96C5\9ED1";}
+.ticketTable tr td{text-align:center;height:40px;font:12px/40px "\5FAE\8F6F\96C5\9ED1";color:#666;overflow:hidden;}
+.ticketTable tr.txt td{border-bottom:#dcdcdc dashed 1px;}

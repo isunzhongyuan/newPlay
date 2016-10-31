@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*-- 公用样式开始 ---*/
+*{word-wrap:break-word}
+a,body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,html,img,input,li,ol,p,select,td,textarea,th,tr,ul{margin:0;padding:0}
+dl,li,ol,ul{list-style-type:none}
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+address,caption,cite,code,dfn,em,i,th,var{font-style:normal;font-weight:400;font-style:normal}
+button,input,optgroup,option,select,textarea{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+button,input{overflow:visible;vertical-align:middle;outline:0}
+body,button,input,select,td,textarea,th{font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial,"\5FAE\8F6F\96C5\9ED1", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;font-size:12px;color:#333;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased}
+body{line-height:1.6;-webkit-font-smoothing:antialiased;display:initial;}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+img{border:0;vertical-align:middle}
+a,area{outline:0;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;cursor:pointer}
+a:hover{text-decoration:underline;outline:0}
+a.ie6:hover{zoom:1}
+a:focus{outline:0}
+a:active,a:hover{outline:0}
+:focus{outline:0}
+sub,sup{vertical-align:baseline}
+textarea{resize:none;overflow:hidden;resize:none}
+img{border:0;vertical-align:middle}
+a img,img{-ms-interpolation-mode:bicubic}
+.img-responsive{max-width:100%;height:auto}
+html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}
+(this))}
+.clear{diplay:block!important;float:none!important;clear:both;overflow:hidden;width:auto!important;height:0!important;margin:0 auto!important;padding:0!important;font-size:0;line-height:0}

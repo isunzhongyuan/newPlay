@@ -1,0 +1,34 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "������";}
+/* select */
+.select{padding:5px 10px;border:#ddd 1px solid;border-radius:4px;width:1200px;margin:50px auto; overflow:hidden;font-size:12px}
+.select li{list-style:none;padding:10px 0 5px 0px}
+.select .select-list{border-bottom:#eee 1px dashed; position: relative;}
+.select dl{zoom:1;position:relative;line-height:24px; padding-right: 60px; overflow: hidden;}
+.select dl:after{content:" ";display:block;clear:both;height:0;overflow:hidden}
+.select dt.codey{color:#666;height:34px;line-height:34px;float: left; width: 60px; text-align: center;}
+.select dd{float:left;display:inline;margin:0 0 5px 5px; height: 34px; line-height: 34px;}
+.select a{display:inline-block;white-space:nowrap;height:24px; line-height:24px;padding:0 10px;text-decoration:none;color:#039;border-radius:2px;}
+.select a:hover{color:#f60;background-color:#f3edc2; cursor: pointer;}
+.select .selected a{color:#fff;background-color:#f60}
+.select-result dt{font-weight:bold}
+.select-no{color:#999}
+.select .select-result a{padding-right:20px;background:#f60 url("close.gif") right 9px no-repeat}
+.select .select-result a:hover{background-position:right -15px}
+
+.slide_btn{background: #fff url(li_ico_22.png) no-repeat scroll right -85px;
+    color: #333;
+    float: none;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+.slide_btn_b{background: #fff url(li_ico_22_b.png) no-repeat scroll right -85px;
+    color: #333;
+    float: none;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+    top: 6px;}

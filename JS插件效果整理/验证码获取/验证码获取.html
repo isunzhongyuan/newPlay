@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+	<meta charset="utf-8" />
+	<title>验证码获取</title>
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="我是网页的描述sss"/>
+	<link rel="stylesheet" href="css/common.css" type="text/css" />	
+	<link rel="stylesheet" href="css/common.css" type="text/css" />	
+	<link rel="stylesheet" href="css/iconfont/iconfont.css" type="text/css" />	
+	<link rel="stylesheet" href="css/updateTel.css" type="text/css" />	
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="background-color:#f2f2f2;">
+	<div class="rightSide">
+		<ul class="telInfo">
+			<li>
+				<i>新手机号码：</i>
+				<input type="text" placeholder="输入您的手机号码" />
+				<span>手机号码不正确</span>
+			</li>
+			<li>
+				<i>验证码：</i>
+				<input type="text" class="confirmCode" placeholder="验证码" />
+				<input class="sendCode" type="button" value="获取验证码" />
+				<span>验证码不正确</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	//私信列表选项卡
+	$(".sendCode").click (function(){
+		var count = 10;
+        var countdown = setInterval(CountDown, 1000);
+        function CountDown() {
+            $(".sendCode").attr("disabled", true);
+            $(".sendCode").val(count + " s后重新获取");
+            if (count == 0) {
+                $(".sendCode").val("重新获取").removeAttr("disabled");
+                clearInterval(countdown);
+            }
+            count--;
+        }
+	})
+
+})
+</script>
+</body>
+</html>

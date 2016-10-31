@@ -1,0 +1,14 @@
+@charset "utf-8";
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.navBar{ position:relative; z-index:1;  background:#4E4E4E; color:#fff; height:40px; line-height:40px;   }
+.nav{ width:980px; margin:0 auto; font-family:"Microsoft YaHei",SimSun,SimHei;  }
+.nav a{ color:#fff;  }
+.nav h3{ float:left;  font-size:100%; font-weight:normal; font-size:14px;  }
+.nav .m{ float:left;  position:relative; }
+.nav .s{ float:left; width:9px; text-align:center; color:#eee;   }
+.nav h3 a{  display:block; padding:0 20px;  }
+.nav .on a{  background:#21AEB5;  }
+.nav .sub{ display:none; /*默认隐藏*/ width:500px;  position:absolute; left:0; top:40px; height:26px; line-height:26px; padding:7px 0;  background:#21AEB5;  float:left;  }
+.nav .sub li{ float:left;  }
+.nav .sub li a{ display:block; padding:0 15px; margin:0 10px;  }
+.nav .sub li a:hover{ background:#1c8e95; color:#fff;    }

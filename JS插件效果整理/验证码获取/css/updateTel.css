@@ -1,0 +1,18 @@
+@charset "utf-8";
+.rightSide{width:885px;background-color:#fff;height:auto;min-height:800px;border:#e9e9e9 solid 1px; margin:0 auto;overflow: hidden;}
+/*-- 绑定手机 ---*/
+.telWelcom{height:auto;overflow:hidden;}
+.telWelcom h1{font:18px/18px "\5FAE\8F6F\96C5\9ED1";color:#333;padding:20px 0px 10px 0px}
+.telWelcom p{color:#999;font:12px/14px "\5FAE\8F6F\96C5\9ED1";}
+.telWelcom p a{color:#f60;margin:0px 5px;}
+/*-- 绑定手机 ---*/
+.telInfo{height:auto;overflow:hidden;padding-top:30px;}
+.telInfo li{margin-top:20px;height:auto;overflow:hidden;}
+.telInfo li i{width:170px;font:14px/37px "\5FAE\8F6F\96C5\9ED1";color:#999;float:left;text-align:right;padding-right:10px;}
+.telInfo li input[type="text"]{width:225px;padding:0px 0px 0px 8px;box-sizing:content-box;height:35px;font-size:14px;border:#dcdcdc solid 1px;border-radius:4px;}
+.telInfo li input.confirmCode{width:120px;}
+.telInfo li input.sendCode{width:90px;height:37px;background-color:#4998e5;color:#fff;margin-left:13px;font-size:12px;border-radius:4px;border:none;cursor:pointer;}
+.telInfo li span{padding-left:10px;color:#f60;}
+.updateTel{padding:38px 0px 60px 180px}
+.updateTel input{width:100px;height:38px;background-color:#f60;color:#fff;font-size:14px;border-radius:4px;border:none;cursor:pointer;}
+.telInfo li input.sendCode:disabled{background-color:#999;color:#fff}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+	/* 头部左侧 */
+.topNav {background: #f2f2f2 none repeat scroll 0 0;border-bottom: 1px solid #ededee;color: #666;position: relative;}
+.topNav a:hover {color: #d22147;text-decoration: none;}
+.topNav .phone:hover {color: #666;}
+.topNav .sep {color: #ccc;}
+.topNav .dropMenuBoxActive .sep, .topNav .mcDropMenuBox:hover .sep {color: #fff;}
+.topNavWrap {height: 30px;line-height: 30px;margin: 0 auto;position: relative;width: 1090px;}
+.topNavLeft{float: left;}
+.topNavLeft .sep {padding: 0 10px;}
+.topNavLeft .login {margin-left: 10px;}
+/* 头部右侧 */
+.topNavRight {float: right;position: relative;right: -3px;}
+.topNavRight li {float: left}
+.topNavRight .toplevel {padding: 0 14px 0 8px;}
+.topNavHolder {padding: 0 24px 0 16px !important;position: relative;}
+.topNavHolder .arr {border-color: #666 transparent transparent;border-style: solid dashed dashed;border-width: 4px 4px 0;font-size: 0;height: 0;line-height: 0;margin-top: -2px;position: absolute;right: 14px;top: 50%;transition: transform 0.2s ease-in 0s;width: 0;}
+.mcDropMenuBox:hover .topNavHolder .arr {transform: rotate(180deg);}
+.mcDropMenuBox {border: 1px solid transparent;left: -3px;position: relative;top: -1px;}
+.service .mcDropMenuBox {left: -6px;}
+.mcDropMenuBox:hover {background: #fff none repeat scroll 0 0;border: 1px solid #e8e8ea;}
+.mcDropMenu {border-top: 0 none;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);display: none;left: -1px;padding: 4px 15px 12px 14px;position: absolute;top: 30px; z-index: 9;background-color: #FFFFFF;}
+.more .mcDropMenu {left: auto;right: -1px;}
+.mcDropMenuBox:hover .mcDropMenu {display: block;}
+.mcDropMenu a {cursor: pointer;display: block;height: 28px;line-height: 28px;white-space: nowrap;word-wrap: normal;}
+.service .mcDropMenu a {padding: 0 4px;margin-left: 4px;}
+.topNav .greenhand .toplevel {color: #d22147;padding-right: 16px !important;}

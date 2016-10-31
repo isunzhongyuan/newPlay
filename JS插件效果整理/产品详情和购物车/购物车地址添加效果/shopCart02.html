@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="zh">
+	<meta charset="utf-8">
+	<title>购物车</title>
+	<meta name="Keywords" content="关键词">
+	<meta name="Description" content="我是网页的描述sss">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css" type="text/css">
+	<link rel="stylesheet" href="css/shopCart.css" type="text/css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/placeholder.js"></script>
+	<script type="text/javascript" src="js/artDialog.js"></script>
+</head>
+<body style="background-color:#f2f2f2;">
+<!---- 收货人信息和收货地址 ---->
+<div class="addressList">
+	<h3>收货人信息</h3>
+	<a class="addAddress" href="#" title="新增收获地址">新增收获地址</a>
+	<ul>
+		<li class="selected">
+			<b>默认地址</b>
+			<span class="addInfos">沐剑屏　河南省　郑州市　高新区　长春路冬青街交叉口河南电子商务产业园企汇网　135****081</span>
+			<span class="addOp">
+				<a class="setDefault" href="javascript:void(0)" title="设为默认">设为默认</a>
+				<a class="editAddBtn" href="javascript:void(0)" title="编辑">编辑</a>
+				<a class="delAdd" href="javascript:void(0)" title="删除">删除</a>
+			</span>
+		</li>
+		<li>
+			<b>默认地址</b>
+			<span class="addInfos">沐剑屏　河南省　郑州市　高新区　长春路冬青街交叉口河南电子商务产业园企汇网　135****081</span>
+			<span class="addOp">
+				<a class="setDefault" href="javascript:void(0)" title="设为默认">设为默认</a>
+				<a href="javascript:void(0)" title="编辑">编辑</a>
+				<a class="delAdd" href="javascript:void(0)" title="删除">删除</a>
+			</span>
+		</li>
+		<li>
+			<b>默认地址</b>
+			<span class="addInfos">沐剑屏　河南省　郑州市　高新区　长春路冬青街交叉口河南电子商务产业园企汇网　135****081</span>
+			<span class="addOp">
+				<a class="setDefault" href="javascript:void(0)" title="设为默认">设为默认</a>
+				<a href="javascript:void(0)" title="编辑">编辑</a>
+				<a class="delAdd" href="javascript:void(0)" title="删除">删除</a>
+			</span>
+		</li>
+		<li>
+			<b>默认地址</b>
+			<span class="addInfos">沐剑屏　河南省　郑州市　高新区　长春路冬青街交叉口河南电子商务产业园企汇网　135****081</span>
+			<span class="addOp">
+				<a class="setDefault" href="javascript:void(0)" title="设为默认">设为默认</a>
+				<a href="javascript:void(0)" title="编辑">编辑</a>
+				<a class="delAdd" href="javascript:void(0)" title="删除">删除</a>
+			</span>
+		</li>
+	</ul>
+	<a class="showAddList" href="javascript:void(0)">展开地址</a>
+</div>
+<!---- 新增收货人地址弹窗 ---->
+<div class="editAddress" id="editAddress">
+	<h3>新增收货人信息</h3>
+	<a class="closeBtn iconfont" i="close" href="javascript:void(0)" title="关闭">&#xe612;</a>
+	<ul>
+		<li>
+			<i><font>*</font>收货人：</i>
+			<input type="text" placeholder="收货人" />
+			<span>错误提示</span>
+		</li>
+		<li>
+			<i><font>*</font>所在地区：</i>
+			<select>
+				<option>001</option>
+				<option>002</option>
+				<option>003</option>
+				<option>004</option>
+			</select>
+			<select>
+				<option>001</option>
+				<option>002</option>
+				<option>003</option>
+				<option>004</option>
+			</select>
+			<select>
+				<option>001</option>
+				<option>002</option>
+				<option>003</option>
+				<option>004</option>
+			</select>
+			<span>错误提示</span>
+		</li>
+		<li class="addressDets">
+			<i><font>*</font>详细地址：</i>
+			<textarea placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息"></textarea>
+			<span>错误提示</span>
+		</li>
+		<li>
+			<i><font>*</font>手机号码：</i>
+			<input type="text" placeholder="手机号码" />
+			<span>错误提示</span>
+		</li>
+		<li>
+			<i>固定电话：</i>
+			<input type="text" placeholder="固定电话" />
+		</li>
+		<li>
+			<i>邮箱：</i>
+			<input type="text" placeholder="E-mail地址" />
+			<p>用来接收订单提醒邮件，便于您及时了解订单状态</p>
+		</li>
+		<li>
+			<input type="button" data-id="ok" value="保存收货人信息"/>
+			<input class="cancelBtn" data-id="cancel" type="button" value="取消" />
+		</li>
+	</ul>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	//地址列表默认样式
+	$(".addressList ul li").hover(function(){
+		$(this).children("span").toggleClass("hover")
+	})
+	//设为默认地址
+	$(".setDefault").click(function(){
+		$(this).parents("li").addClass("selected")
+		$(this).parents("li").siblings().removeClass("selected")
+	})
+	//删除收获地址
+	$(".delAdd").click(function(){
+		$(this).parents("li").remove();
+	})
+	//展开收起地址
+	$(".showAddList").click(function(){
+		$(this).toggleClass("up")
+		$(this).siblings("ul").toggleClass("up")
+		var showText=$(".showAddList").text();
+		if(showText=="展开地址"){
+			$(this).html("收起地址")
+		}
+		else{
+			$(this).html("展开地址")
+		}
+	})
+	//编辑地址弹窗
+	$(".editAddBtn").click(function(){
+         dialog({
+             content:document.getElementById("editAddress"),
+			 ok: function () {
+				 this.close();
+				 return false;
+				 },
+			 cancel: function () {
+				 this.close();
+				 return false;
+				 },
+			 fixed:true,
+			 width:690,
+			 height:550,
+         }).showModal();
+		 //让隐藏的样式显示
+		 $("#editAddress").css("display","block");
+	});
+});
+</script>
+</body>
+</html>

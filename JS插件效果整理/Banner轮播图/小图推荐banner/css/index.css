@@ -1,0 +1,12 @@
+@charset "utf-8";
+a:hover{text-decoration:none}
+/* 小图轮播推荐   */
+.bannerScroll{position:relative;height:185px;padding:0 0 10px 0;background:#fff;overflow:hidden;width:1200px;margin:30px auto 0}
+.bannerScroll ul{overflow:hidden;zoom:1}
+.bannerScroll ul li{float:left;margin:0 5px 0 7px;width:287px;overflow:hidden}
+.bannerScroll ul li a{display:block}
+.bannerScroll ul li img{width:287px;height:185px}
+.bannerScroll .next,.bannerScroll .prev{position:absolute;left:10px;top:90px;display:block;width:18px;height:28px;overflow:hidden;background:url(../images/icons.png) -40px 0 no-repeat;cursor:pointer}
+.bannerScroll .next{left:auto;right:10px;background-position:-120px 0}
+.bannerScroll .prevStop{background-position:0 0}
+.bannerScroll .nextStop{background-position:-80px 0}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>首页导航</title>
+<meta name="Keywords" content="关键词"/>
+<meta name="renderer" content="webkit">
+<meta name="Description" content="网页描述"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+	<div class="navBar">
+			<ul class="nav clearfix">
+				<li id="m1" class="m on">
+					<h3><a target="_blank" href="http://www.superslide2.com/">网站首页</a></h3>
+				</li>
+				<li class="s">|</li>
+				<li id="m2" class="m">
+					<h3><a target="_blank" href="http://www.superslide2.com/">如何使用</a></h3>
+					<ul class="sub">
+						<li><a href="#">如何使用</a></li>
+						<li><a href="#">如何使用</a></li>
+						<li><a href="#">如何使用</a></li>
+						<li><a href="#">如何使用</a></li>
+					</ul>
+				</li>
+				<li class="s">|</li>
+				<li id="m3" class="m">
+					<h3><a target="_blank" href="http://www.superslide2.com/">查看参数</a></h3>
+					<ul class="sub">
+						<li><a href="#">查看参数</a></li>
+						<li><a href="#">查看参数</a></li>
+						<li><a href="#">查看参数</a></li>
+						<li><a href="#">查看参数</a></li>
+					</ul>
+				</li>
+				<li class="s">|</li>
+				<li id="m4" class="m">
+					<h3><a target="_blank" href="http://www.superslide2.com/">基础效果</a></h3>
+					<ul class="sub">
+						<li><a href="#">基础效果</a></li>
+						<li><a href="#">基础效果</a></li>
+						<li><a href="#">基础效果</a></li>
+						<li><a href="#">基础效果</a></li>
+					</ul>
+				</li>
+				<li class="s">|</li>
+				<li id="m5" class="m">
+					<h3><a target="_blank" href="http://www.superslide2.com/">扩展效果</a></h3>
+					<ul class="sub">
+						<li><a href="#">扩展效果</a></li>
+						<li><a href="#">扩展效果</a></li>
+						<li><a href="#">扩展效果</a></li>
+						<li><a href="#">扩展效果</a></li>
+					</ul>
+				</li>
+				<li class="s">|</li>
+				<li id="m5" class="m">
+					<h3><a target="_blank" href="http://www.superslide2.com/">SuperSlide</a></h3>
+				</li>
+				<li class="s">|</li>
+				<li id="m5" class="m">
+					<h3><a target="_blank" href="http://www.superslide2.com/">大话主席</a></h3>
+				</li>
+			</ul>
+	</div>
+	<script type="text/javascript">
+		jQuery(".nav").slide({ 
+				type:"menu", //效果类型
+				titCell:".m", // 鼠标触发对象
+				targetCell:".sub", // 效果对象，必须被titCell包含
+				delayTime:300, // 效果时间
+				triggerTime:0, //鼠标延迟触发时间
+				returnDefault:true  //返回默认状态
+			});
+	</script> 
+</body>
+</html>

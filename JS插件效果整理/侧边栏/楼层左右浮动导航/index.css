@@ -1,0 +1,15 @@
+﻿@charset "utf-8";
+
+/* 左右浮动导航 */
+#floatnav{position:fixed;right:50%;margin-right:630px;top:30%;width:60px;list-style-type:none;font:12px "\5FAE\8F6F\96C5\9ED1"}
+#floatnav a{display:block;width:54px;height:30px;padding:2px 3px 3px 3px;line-height:100px;color:#888;text-decoration:none;overflow:hidden;background:url(bgNav.png) no-repeat}
+#floatnav a:hover{line-height:29px;color:#ff6602;background-image:none;text-align:center;border-bottom:1px dashed #E4E4E4;height:29px}
+#floatnav .f2{background-position:0 -55px}
+#floatnav .f3{background-position:0 -110px}
+#floatnav .f4{background-position:0 -165px}
+#floatnav .f5{background-position:0 -220px}
+#floatnav .f6{background-position:0 -275px}
+#floatnav .f7{background-position:0 -330px}
+#floatnav .f8{background-position:0 -385px}
+#floatnav .f13{background-position:0 -440px}
+#floatnav .current a{line-height:28px;color:#ff6602;background-image:none;text-align:center;border-bottom:1px dashed #E4E4E4}

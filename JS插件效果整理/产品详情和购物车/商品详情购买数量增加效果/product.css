@@ -1,0 +1,8 @@
+ @charset "utf-8";
+.productInfos { width: 1170px; height: auto; overflow: hidden; margin: 0 auto; padding: 15px; background-color: #FFFFFF; position: relative; border: 1px solid #E4E4E4; margin-top: 15px; }
+.proDets { width: 500px; height: auto; overflow: hidden; float: left; position: relative; margin-left: 15px }
+.proDets dt { width: 500px; font: 700 18px/50px "微软雅黑"; color: #4e4e4e; border-bottom: #b3b3b3 solid 1px; height: 50px; overflow: hidden }
+.buyCounts { display: block; margin-top: 5px; color: grey; height: auto; overflow: hidden }
+.buyCounts b { width: 50px; float: left; font: 12px/30px "\5FAE\8F6F\96C5\9ED1" }
+.addBtn, .minusBtn { width: 30px; height: 30px; border: #b3b3b3 solid 1px; background-color: #f2f2f2; color: #8c8b8b; outline: 0; cursor: pointer; float: left }
+.countInput { width: 50px; margin: 0 10px; height: 28px;line-height: 28px; border-top: #b3b3b3 solid 1px; border: #b3b3b3 solid 1px; float: left; text-align: center; outline: 0 }

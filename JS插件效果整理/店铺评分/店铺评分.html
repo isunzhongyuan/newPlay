@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+	<meta charset="utf-8" />
+	<title>个人中心-挖机商城</title>
+	<meta name="Keywords" content="关键词"/>
+	<meta name="Description" content="我是网页的描述sss"/>		
+	<link rel="stylesheet" href="css/common.css" type="text/css" />	
+	<link rel="stylesheet" href="css/iconfont/iconfont.css" type="text/css" />	
+	<link rel="stylesheet" href="css/ucComment.css" type="text/css" />	
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="background-color:#f2f2f2;">
+		<!---- 店铺评分 ---->
+<div class="shopScroe">
+	<p class="saleScroe">
+		<b>店铺评分：</b>
+		<i class="iconfont" title="1">&#xe627;</i>
+		<i class="iconfont" title="2">&#xe627;</i>
+		<i class="iconfont" title="3">&#xe627;</i>
+		<i class="iconfont" title="4">&#xe627;</i>
+		<i class="iconfont" title="5">&#xe627;</i>
+	</p>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	//评分星星
+	$(".saleScroe i").click(function(){
+		//星级评价jquery
+		var isScore=$(this).attr("title");
+		$(this).addClass("on");
+		$(this).prevAll().addClass("on");
+		$(this).nextAll().removeClass("on");
+		//alert(isScore)
+		$(this).siblings(".scoreInput").val(isScore)
+	});
+
+})
+</script>
+</body>
+</html>

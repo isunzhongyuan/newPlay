@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*--公用样式开始---*/
+html,body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,p,th,tr,td,a,dl,dd,dt,form,fieldset,input,textarea,select,button,textarea,img{margin:0px;padding:0px;}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#f2f2f2;-webkit-text-size-adjust:100%;}
+a{color:#172c45;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em,i{font-style:normal}
+li{list-style-type:none;}
+img{border:0;vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;padding:0px;}
+p{word-wrap:break-word}
+input {padding-top:0px;padding-bottom:0px;font-family:"SimSun","宋体";}
+input::-moz-focus-inner {border:none;padding:0px;}
+textarea {resize:none;overflow:hidden;}
+.clear {diplay: block!important;float:none!important;clear:both;overflow:hidden;width:auto!important;height:0px!important;margin:0px auto!important;padding:0px!important;font-size:0px;line-height:0px;}

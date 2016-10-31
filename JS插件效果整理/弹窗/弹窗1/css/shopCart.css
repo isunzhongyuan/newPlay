@@ -1,0 +1,21 @@
+@charset "utf-8";
+.addressList{ width: 50px; height: 50px; line-height: 50px; background-color: #EA3E3E;color: #FFFFFF;border: none; cursor: pointer;text-align: center; margin: 100px 300px;}
+/*---- 编辑收获地址弹窗 ----*/
+.editAddress{width:690px;height:550px;background-color:#fff;position:relative;display:none;}
+.editAddress h3{font:14px/40px "\5FAE\8F6F\96C5\9ED1";color:#666;background-color:#f3f3f3;padding-left:20px;}
+.closeBtn{position:absolute;top:7px;right:10px;color:#666;}
+.closeBtn:hover{text-decoration:none;color:#f60}
+.editAddress ul{height:auto;overflow:hidden;padding-top:10px;}
+.editAddress ul li{margin-top:20px;height:auto;overflow:hidden;}
+.editAddress ul li i{width:180px;float:left;text-align:right;font:14px/38px "\5FAE\8F6F\96C5\9ED1";color:#666}
+.editAddress ul li i font{margin-right:4px;color:#f60;}
+.editAddress ul li input[type="text"]{width:240px;height:14px;float:left;font-size:14px;vertical-align:center;font:14px/14px "\5FAE\8F6F\96C5\9ED1 \9";color:#333;border:#dcdcdc solid 1px;padding:11px 0px 11px 10px;border-radius:4px;box-sizing:content-box;}
+.editAddress ul li span{padding-left:15px;color:#ea3e3e;font:14px/38px "\5FAE\8F6F\96C5\9ED1";float:left;}
+.editAddress ul li select{height:36px;float:left;margin-right:15px;border-radius:4px;border:#dcdcdc solid 1px;}
+.editAddress ul li textarea{width:253px;height:50px;border:#dcdcdc solid 1px;border-radius:4px;float:left;padding:3px 0px 0px 5px;}
+.editAddress ul li p{display:block;width:570px;float:left;padding:10px 0px 0px 180px;color:#999}
+.editAddress ul li  input[type="button"]{height:36px;font-size:14px;border:none;border-radius:4px;background-color:#f90;color:#fff;margin:0px 0px 0px 180px;cursor:pointer;padding:0px 15px}
+.editAddress ul li  input[type="button"].cancelBtn{margin:0px 0px 0px 20px;padding:0px 30px;background-color:#999;}
+.editAddress ul li.addressDets i,.editAddress ul li.addressDets span{font:14px/20px "\5FAE\8F6F\96C5\9ED1";}
+
+
